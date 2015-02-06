@@ -1,0 +1,56 @@
+.tmb-poptips {
+  width: 100%;
+  position: fixed;
+  top: 46px;
+  left: 0px;
+  z-index: 10;
+}
+
+.tmb-poptips .tmb-poptips-cnt {
+  margin: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  line-height: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+
+.tmb-poptips i {
+  display: inline-block;
+  width: 20px;
+  height: 0px;
+  position: relative;
+  overflow: visible;
+  margin-right: 8px;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.tmb-poptips i:before {
+  background: url(../images/icon.png?_bid=306) no-repeat 0px 0px;
+  -webkit-background-size: 150px auto;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  top: -16px;
+}
+
+.tmb-poptips-info i:before {
+  background-position: 0 -50px;
+}
+
+.tmb-poptips-success i:before {
+  background-position: -25px -50px;
+}
+
+.tmb-poptips-warn i:before {
+  background-position: -50px -50px;
+}
+

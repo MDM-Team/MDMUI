@@ -1,0 +1,38 @@
+
+.tmb-navs.theme-default {
+  background-color: #F5F5F5
+}
+
+.tmb-navs.theme-default li.current {
+  background-color: #1F8DD6;
+}
+
+.tmb-navs.theme-default li.current a {
+  color: #fff;
+}
+
+.tmb-navs {
+  margin: 10px 0;
+  min-height: 34px;
+}
+
+.tmb-navs ul.tmb-navs-list {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
+
+.tmb-navs ul.tmb-navs-list li {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+
+.tmb-navs ul.tmb-navs-list li > a {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  color: #666;
+}
+
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/tmbui.min.css">
+    <title>Form</title>
+    <style>
+        .form{
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .tmb-input-row{
+            margin-top: 10px;
+        }
+        .tmb-input-title{
+            width: 15%;
+            font-size: 12px;
+        }
+       .tmb-input-row-border{
+           margin-top: 10px;
+       }
+        .tmb-input-row-border-bottom{
+            margin-top: 10px;
+        }
+        .tmb-input-row .tmb-checkbox{
+            float: left;
+            margin-right: 10px;
+        }
+        .tmb-input-row .tmb-radiobox{
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="tmb-header tmb-bule-bg tmb-primary">
+    <a class="tmb-icon icon-angle-left tmb-pull-left tmb-white-color" href="../index.html"></a>
+    <h1 class="tmb-title tmb-white-color">Form元素</h1>
+</div>
+<div class="tmb-content tmb-header-fixed">
+    <form class="form">
+        <div class="tmb-input-row">
+            <input type="text" class="tmb-input-clear" placeholder="用户名" data-input-clear="1">
+        </div>
+        <div class="tmb-input-row">
+            <input type="password" class="tmb-input-clear" placeholder="密码" data-input-clear="1">
+        </div>
+        <div class="tmb-input-row">
+            <input type="text" class="tmb-input tmb-input-clear" placeholder="take photo">
+            <span class="tmb-icon  icon-camera"></span>
+        </div>
+        <div class="tmb-input-row tmb-input-row-border">
+            <div class="tmb-input-left-icon  icon-user-md">
+            </div>
+            <div class="tmb-input-right-input">
+                <input type="text" class="tmb-input tmb-input-clear" placeholder="用户名">
+            </div>
+        </div>
+        <div class="tmb-input-row tmb-input-row-border">
+            <div class="tmb-input-left-icon  icon-suitcase">
+            </div>
+            <div class="tmb-input-right-input">
+                <input type="text" class="tmb-input tmb-input-clear" placeholder="用户名">
+            </div>
+        </div>
+        <div class="tmb-input-row tmb-input-row-border-bottom">
+            <div class="tmb-input-right-input">
+                <input type="text" class="tmb-input tmb-input-clear" placeholder="用户名">
+            </div>
+        </div>
+        <div class="tmb-input-row tmb-input-row-border-bottom">
+            <div class="tmb-input-right-input">
+                <input type="text" class="tmb-input tmb-input-clear" placeholder="用户名">
+            </div>
+        </div>
+        <div class="tmb-input-row tmb-input-row-border-bottom">
+            <div class="tmb-input-left-icon  icon-user-md">
+            </div>
+            <div class="tmb-input-right-input">
+                <input type="text" class="tmb-input" placeholder="用户名">
+            </div>
+        </div>
+        <div class="tmb-input-row tmb-input-row-border-bottom">
+            <div class="tmb-input-left-icon  icon-suitcase">
+            </div>
+            <div class="tmb-input-right-input">
+                <input type="text" class="tmb-input" placeholder="用户名">
+            </div>
+        </div>
+        <div class="tmb-input-row tmb-input-row-border">
+
+            <div class="tmb-input-right-input">
+                <input type="text" class="tmb-input tmb-input-clear" placeholder="搜索">
+            </div>
+            <div class="tmb-input-right-icon  icon-search">
+            </div>
+        </div>
+        <div class="tmb-input-row tmb-input-row-border-bottom">
+
+            <div class="tmb-input-right-input">
+                <input type="text" class="tmb-input" placeholder="搜索">
+            </div>
+            <div class="tmb-input-right-icon  icon-search">
+            </div>
+        </div>
+
+        <div class="tmb-input-row ">
+            <div class="tmb-checkbox checked">
+                <input type="checkbox" checked/>
+            </div>
+            <div class="tmb-checkbox">
+                <input type="checkbox"/>
+            </div>
+        </div>
+        <div class="tmb-input-row">
+            <div class="tmb-radiobox checked">
+                <input type="radio" checked/>
+            </div>
+            <div class="tmb-radiobox">
+                <input type="radio"/>
+            </div>
+        </div>
+        <div class="tmb-input-row">
+            <textarea rows="5">欢迎使用TmbUIJS</textarea>
+        </div>
+        <div class="tmb-input-row">
+            <div class="tmb-select" data-switch="off">
+                <span>下拉列表</span>
+                <a class="tmb-icon icon-chevron-down-right"></a>
+            </div>
+            <ul class="tmb-select-list">
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+            </ul>
+        </div>
+        <div class="tmb-input-row">
+            <div class="tmb-select" data-switch="off">
+                <span>下拉列表</span>
+                <a class="tmb-icon icon-chevron-down-right"></a>
+            </div>
+            <ul class="tmb-select-list">
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+            </ul>
+        </div>
+        <div class="tmb-input-row">
+            <div class="tmb-select" data-switch="off">
+                <span>下拉列表</span>
+                <a class="tmb-icon icon-chevron-down-right"></a>
+            </div>
+            <ul class="tmb-select-list">
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+                <li class="tmb-select-list-item"><a href="#">按钮</a></li>
+            </ul>
+        </div>
+
+        <div class="tmb-input-row">
+             <table class="tmb-table">
+                 <tr>
+                     <th>序号</th>
+                     <th>名称</th>
+                     <th>类别</th>
+                 </tr>
+                 <tr>
+                     <td>88</td>
+                     <td>小米2s</td>
+                     <td>手机</td>
+                 </tr>
+                 <tr>
+                     <td>88</td>
+                     <td>小米2s</td>
+                     <td>手机</td>
+                 </tr>
+                 <tr>
+                     <td>88</td>
+                     <td>小米2s</td>
+                     <td>手机</td>
+                 </tr>
+                 <tr>
+                     <td>88</td>
+                     <td>小米2s</td>
+                     <td>手机</td>
+                 </tr>
+             </table>
+        </div>
+        <br>
+        <br>
+        <br>
+    </form>
+    <br>
+</div>
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script data-main="../js/app" src="../vendor/require/require.js"></script>
+</body>
+</html>

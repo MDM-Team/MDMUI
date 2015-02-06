@@ -1,0 +1,42 @@
+{
+  "name": "tmbjsui",
+  "version": "1.0.0",
+  "description": "the crossing screen front-end framework,for mobile",
+  "main":  [
+    "dist/css/tmbui.css",
+    "dist/css/tmbui.min.css",
+    "dist/js/tmbui.js",
+    "dist/js/tmbui.min.js"
+  ],
+  "keywords": [
+    "css",
+    "js",
+    "sass",
+    "front-end",
+    "framework",
+    "web",
+    "web-components"
+  ],
+  "authors": [
+    {
+        "name":"jamacy",
+        "email":"jamacy@live.cn"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "homepage": "http://www.temobi.com",
+  "ignore": [
+    "/.*",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "vendor",
+    "tools",
+    "node_modules",
+    "nodemon.json"
+  ]
+}

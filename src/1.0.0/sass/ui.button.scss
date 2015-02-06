@@ -1,0 +1,145 @@
+.#{$UIName}-btn, button, input[type=button], input[type=reset], input[type=submit] {
+  position: relative;
+  display: block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.42;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  /*background-color: #fff;
+  border: 1px solid #ccc;*/
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+input[type="button"]:active, input[type="button"].tui-active,
+input[type="submit"]:active,
+input[type="submit"].#{$UIName}-active,
+input[type="reset"]:active,
+input[type="reset"].#{$UIName}-active,
+button:active,
+button.#{$UIName}-active,
+.#{$UIName}-btn:active,
+.#{$UIName}-btn.mui-active {
+  color: #fff;
+  background-color: #929292;
+}
+
+.#{$UIName}-btn-primary {
+  color: #fff;
+  background-color: #{$primary};
+  border: 1px solid #{$primary};
+}
+
+.#{$UIName}-btn-primary-actived {
+  color: #fff;
+  background-color: #{$primary-actived};
+  border: 1px solid #{$primary-actived};
+}
+
+.#{$UIName}-btn-yellow {
+  color: #fff;
+  background-color: #{$yellow};
+  border: 1px solid #{$yellow};
+}
+
+.#{$UIName}-btn-blue {
+  color: #fff;
+  background-color: #{$blue};
+  border: 1px solid #{$blue};
+}
+
+.#{$UIName}-btn-blue-actived {
+  color: #fff;
+  background-color: #{$blue-actived};
+  border: 1px solid #{$blue-actived};
+}
+
+.#{$UIName}-btn-green-actived {
+  color: #fff;
+  background-color: #08925F;
+
+}
+
+.#{$UIName}-btn-red {
+  color: #fff;
+  background-color: #{$red};
+  border: 1px solid #{$red};
+}
+
+.#{$UIName}-btn-green {
+  color: #fff;
+  background-color: #{$green};
+  border: 1px solid #{$green};
+}
+
+/*大小定义*/
+.#{$UIName}-btn-xsmall {
+  width: 30%;
+  font-size: #{$X-Small};
+}
+
+.#{$UIName}-btn-small {
+  width: 40%;
+  font-size: #{$Small};
+}
+
+.#{$UIName}-btn-normal {
+  width: 50%;
+  font-size: #{$Normal};
+}
+
+.#{$UIName}-btn-large {
+  width: 60%;
+  font-size: #{$Large};
+}
+
+.#{$UIName}-btn-deflaut-size {
+  width: 100%;
+  font-size: #{$Deflaut-size};
+}
+
+/*圆角大小*/
+.#{$UIName}-btn-rounded {
+  border-radius: 3px;
+}
+
+.#{$UIName}-btn-rounded-max {
+  border-radius: 15px;
+}
+
+.#{$UIName}-btn-controlgroup {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.#{$UIName}-btn-controlgroup .#{$UIName}-btn {
+  width: auto;
+  float: left;
+}
+
+.#{$UIName}-btn-right-primary-border {
+  border-right: 1px solid #{$right-primary-border-color};
+}
+
+.#{$UIName}-btn-right-blue-border {
+  border-right: 1px solid #{$right-blue-border-color};
+}
+
+.#{$UIName}-btn-left-border {
+  border-left: 1px solid #000000;
+}
+
+.#{$UIName}-btn-right-green-border {
+  border-right: 1px solid #{$right-green-border-color};
+}
+

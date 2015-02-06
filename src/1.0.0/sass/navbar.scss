@@ -1,0 +1,80 @@
+.#{$UIName}-footer .#{$UIName}-tab-item {
+  display: table-cell;
+  width: 1%;
+  height: 50px;
+  overflow: hidden;
+  color: #{$tab-item-color};
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.#{$UIName}-footer .#{$UIName}-tab-item
+.#{$UIName}-bar-tab {
+  bottom: 0;
+  display: table;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  table-layout: fixed;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.#{$UIName}-footer .#{$UIName}-tab-item .#{$UIName}-icon {
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.#{$UIName}-footer .#{$UIName}-tab-item .#{$UIName}-icon {
+  position: relative;
+  z-index: 20;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.#{$UIName}-footer .#{$UIName}-tab-item .#{$UIName}-icon ~ .#{$UIName}-tab-label {
+  display: block;
+  overflow: hidden;
+  font-size: 11px;
+  text-overflow: ellipsis;
+}
+
+.#{$UIName}-footer .#{$UIName}-tab-item {
+  display: table-cell;
+  width: 1%;
+  height: 50px;
+  overflow: hidden;
+  color: #{$tab-item-color};
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.#{$UIName}-footer .#{$UIName}-tab-item input {
+  display: none;
+}
+
+.#{$UIName}-footer .#{$UIName}-tab-item input:checked + label {
+  height: 100%;
+  background-color: #08925F;
+  -webkit-box-shadow: 0 0 1px #08925F;
+  box-shadow: 0 0 1px #08925F;
+  z-index: 20;
+  display: block;
+  height: 50px;
+  cursor: pointer;
+}
+
+.#{$UIName}-footer .#{$UIName}-tab-item input + label {
+  height: 100%;
+  background-color: #57C3AB;
+  -webkit-box-shadow: 0 0 1px #57C3AB;
+  box-shadow: 0 0 1px #57C3AB;
+}

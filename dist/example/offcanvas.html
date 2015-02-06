@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/tmbui.min.css">
+    <title>Offcanvas</title>
+    <style>
+        .tmb-offcanvas-wrap{
+            margin-top:60px;
+        }
+    </style>
+</head>
+<body>
+<div class="tmb-header tmb-green-bg tmb-primary">
+    <a class="tmb-icon icon-angle-left tmb-pull-left tmb-white-color tmb-fr" href="../index.html"></a>
+     <h1 class="tmb-title tmb-white-color">侧边栏</h1>
+    <a href="#offcanvas-demo" class="tmb-icon icon-align-left tmb-white-color tmb-fr" data-tmb-offcanvas></a>
+</div>
+
+<div class="tmb-content tmb-header-fixed">
+    <div id="offcanvas-demo" class="tmb-offcanvas">
+        <div class="tmb-offcanvas-bar">
+            <div class="tmb-offcanvas-content">
+               <ul class="tmb-offcanvas-list tmb-offcanvas-wrap">
+                    <li class="offcanvas-item-active"><a href="#"><img src="../images/icon/news_checked.png" width="32" height="32"/><span class="offlist-text">新闻</span></a></li>
+                    <li><a href="#"><img src="../images/icon/pic_default.png" width="32" height="32"/><span class="offlist-text">图片</span></a></li>
+                    <li><a href="#"><img src="../images/icon/video_default.png" width="32" height="32"/><span class="offlist-text">视频</span></a></li>
+                    <li><a href="#"><img src="../images/icon/comment_default.png" width="32" height="32"/><span class="offlist-text">评论</span></a></li>
+               </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/config.js"></script>
+<script data-main="../js/app.offcanvas" src="../vendor/require/require.js"></script>
+</body>
+</html>

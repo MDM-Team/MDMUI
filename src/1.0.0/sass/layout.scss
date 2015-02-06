@@ -1,0 +1,233 @@
+/* Text align */
+.#{$UIName}-text-left {
+  text-align: left !important;
+}
+
+.#{$UIName}-text-right {
+  text-align: right !important;
+}
+
+.#{$UIName}-text-center {
+  text-align: center !important;
+}
+
+.#{$UIName}-text-justify {
+  text-align: justify !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .#{$UIName}-sm-only-text-left {
+    text-align: left !important;
+  }
+  .#{$UIName}-sm-only-text-right {
+    text-align: right !important;
+  }
+  .#{$UIName}-sm-only-text-center {
+    text-align: center !important;
+  }
+  .#{$UIName}-sm-only-text-justify {
+    text-align: justify !important;
+  }
+}
+
+@media only screen {
+  .#{$UIName}-sm-text-left {
+    text-align: left !important;
+  }
+  .#{$UIName}-sm-text-right {
+    text-align: right !important;
+  }
+  .#{$UIName}-sm-text-center {
+    text-align: center !important;
+  }
+  .#{$UIName}-sm-text-justify {
+    text-align: justify !important;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .#{$UIName}-md-only-text-left {
+    text-align: left !important;
+  }
+  .#{$UIName}-md-only-text-right {
+    text-align: right !important;
+  }
+  .#{$UIName}-md-only-text-center {
+    text-align: center !important;
+  }
+  .#{$UIName}-md-only-text-justify {
+    text-align: justify !important;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .#{$UIName}-md-text-left {
+    text-align: left !important;
+  }
+  .#{$UIName}-md-text-right {
+    text-align: right !important;
+  }
+  .#{$UIName}-md-text-center {
+    text-align: center !important;
+  }
+  .#{$UIName}-md-text-justify {
+    text-align: justify !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .#{$UIName}-lg-text-left {
+    text-align: left !important;
+  }
+  .#{$UIName}-lg-text-right {
+    text-align: right !important;
+  }
+  .#{$UIName}-lg-text-center {
+    text-align: center !important;
+  }
+  .#{$UIName}-lg-text-justify {
+    text-align: justify !important;
+  }
+}
+
+.#{$UIName}-text-vtop {
+  vertical-align: top !important;
+}
+
+.#{$UIName}-text-vmiddle {
+  vertical-align: middle !important;
+}
+
+.#{$UIName}-text-vbottom {
+  vertical-align: bottom !important;
+}
+
+.#{$UIName}-header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  top: 0;
+  padding: 0 10px;
+}
+
+.tmb-header-fixed {
+  margin-top: 55px;
+}
+
+.#{$UIName}-defalut-bg {
+  background-color: #{$headerdeflautbg};
+  -webkit-box-shadow: 0 0 1px  #{$headerdeflautbg};
+  box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+}
+
+.#{$UIName}-header.#{$UIName}-primary {
+  background-color: #333;
+  color: #fff;
+}
+
+.#{$UIName}-bule-bg {
+  background-color: #{$headerbluebg};
+  -webkit-box-shadow: 0 0 1px  #{$headerbluebg};
+  box-shadow: 0 0 1px  #{$headerbluebg};
+}
+
+.#{$UIName}-bule-bg-active {
+  background-color: #1767AC;
+  -webkit-box-shadow: 0 0 1px #1767AC;
+  box-shadow: 0 0 1px #1767AC;
+}
+
+.#{$UIName}-black-bg {
+  background-color: #{$headerblackbg};
+  -webkit-box-shadow: 0 0 1px  #{$headerblackbg};
+  box-shadow: 0 0 1px  #{$headerblackbg};
+}
+
+.#{$UIName}-green-bg {
+  background-color: #{$green};
+  -webkit-box-shadow: 0 0 1px  #{$green};
+  box-shadow: 0 0 1px  #{$green};
+}
+
+.#{$UIName}-green-bg-active {
+  background-color: #{$green-actived};
+  -webkit-box-shadow: 0 0 1px  #{$green-actived};
+  box-shadow: 0 0 1px  #{$green-actived};
+}
+
+.#{$UIName}-footer {
+  bottom: 0;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-top: 0;
+  border-bottom: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 44px;
+  border-bottom: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.#{$UIName}-header .#{$UIName}-title {
+  right: 40px;
+  left: 40px;
+  width: auto;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.#{$UIName}-title {
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0 -10px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.#{$UIName}-defalut-color {
+  color: #{$headerdeflautfontcolor};
+}
+
+.#{$UIName}-white-color {
+  color: #{$headerwhitefontcolor};
+}
+
+.#{$UIName}-pull-left {
+  float: left;
+}
+
+.#{$UIName}-header.#{$UIName}-icon {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.#{$UIName}-header .#{$UIName}-icon {
+  position: relative;
+  z-index: 20;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  padding-right: 10px;
+  padding-left: 15px;
+  margin-right: -10px;
+  margin-left: -10px;
+}

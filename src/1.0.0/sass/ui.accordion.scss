@@ -1,0 +1,58 @@
+.tmb-collapse .tmb-icon {
+}
+
+.tmb-collapse {
+}
+
+.tmb-collapse li {
+  border-top: solid 1px #f1f1f1;
+  border-bottom: none;
+}
+
+.tmb-collapse li:nth-last-child(1) {
+  border-bottom: solid 1px #f1f1f1;
+}
+
+.tmb-collapse-cell {
+  display: block;
+  padding: 10px;
+  line-height: 1
+}
+
+.icon-collapse-down:after {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  font-size: inherit;
+  line-height: 1;
+  color: #bbb;
+  text-decoration: none;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-collapse-up:after {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  font-size: inherit;
+  line-height: 1;
+  color: #bbb;
+  text-decoration: none;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.tmb-collapse-panel {
+  position: relative;
+  display: none;
+  padding: 8px 15px;
+  overflow: hidden;
+  background: #F3F3F3;
+  font-size: 14px;
+  -webkit-transition: height .35s ease;
+  -o-transition: height .35s ease;
+  transition: height .35s ease;
+}

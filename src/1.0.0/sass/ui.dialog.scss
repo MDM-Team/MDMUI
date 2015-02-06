@@ -1,0 +1,186 @@
+.tmb-dialog {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  color: #000;
+}
+
+.tmb-dialog-notice {
+  background: transparent;
+}
+
+.tmb-dialog.show {
+  display: -webkit-box;
+  display: box;
+}
+
+.tmb-dialog .tmb-dialog-cnt {
+  border-radius: 6px;
+  width: 270px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: none;
+  pointer-events: auto;
+  background-color: rgba(253, 253, 253, 0.95);
+  position: relative;
+}
+
+.tmb-dialog .tmb-dialog-bd {
+  min-height: 71px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 18px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+}
+
+.tmb-dialog .tmb-dialog-bd h4 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.tmb-dialog .tmb-dialog-bd div {
+  width: 100%;
+}
+
+.tmb-dialog .tmb-dialog-ft {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.tmb-dialog .tmb-dialog-ft button {
+  height: 42px;
+  line-height: 0px;
+  background: transparent;
+}
+
+.tmb-dialog .tmb-dialog-ft button:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tmb-dialog .tmb-dialog-ft button:first-child {
+  border-bottom-left-radius: 6px;
+  background-image: none;
+}
+
+.tmb-dialog .tmb-dialog-ft button:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+.tmb-dialog-notice .tmb-dialog-cnt {
+  width: 90px;
+  height: 110px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  text-align: center;
+  /*background: rgba(0, 0, 0, 0.65);*/
+  background: #000;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.tmb-btn-group .button {
+  float: left;
+}
+
+.tmb-btn-group {
+  display: -webkit-box;
+  width: 100%;
+}
+
+.tmb-btn-group button {
+  color: #00a5e0;
+  display: block;
+  line-height: 50px;
+  height: 48px;
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 16px;
+  border-right: 1px #c8c7cc solid;
+  width: 100%;
+  border-top: 1px solid #c8c7cc;
+}
+
+.tmb-btn-group button:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tmb-btn-bottom button:active {
+  color: rgba(0, 165, 224, 0.6);
+}
+
+.tmb-btn-group button:last-child {
+  border-right: none;
+  background-image: none;
+}
+
+.tmb-btn-group.tmb-btn-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.tmb-btn-group.tmb-btn-bottom button {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
+}
+
+.tmb-btn-group.tmb-btn-bottom button:active {
+  background-color: none;
+  color: rgba(0, 165, 224, 0.4);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .tmb-btn-group button {
+    position: relative;
+    border: 0;
+  }
+
+  .tmb-btn-group button:before {
+    content: "";
+    position: absolute;
+    -webkit-transform-origin: right top;
+    width: 0;
+    border-right: 1px solid #c8c7cc;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: scaleX(0.5);
+  }
+
+  .tmb-btn-group button:after {
+    content: "";
+    position: absolute;
+    -webkit-transform-origin: right top;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-top: 1px solid #c8c7cc;
+    top: 0;
+    -webkit-transform: scaleY(0.5);
+  }
+
+  .tmb-btn-group button:last-child:before {
+    border-right: none;
+    background-image: none;
+  }
+}
+

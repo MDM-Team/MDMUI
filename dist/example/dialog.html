@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/tmbui.min.css">
+    <title>Dialog</title>
+    <style>
+        body,ul,li {
+            padding:0;
+            margin:0;
+            border:0;
+        }
+        .tmb-content{
+            margin-top: 10px;
+        }
+        .tmb-btn{
+            margin-top: 10px;
+        }
+        .tmb-spinner {
+            margin: 0;
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+        .tmb-content{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="tmb-header tmb-primary">
+    <a class="tmb-icon icon-angle-left tmb-pull-left tmb-white-color" href="../index.html"></a>
+    <h1 class="tmb-title tmb-white-color">弹出框</h1>
+</div>
+<div class="tmb-content tmb-header-fixed">
+    <div class="tmb-btn tmb-btn-primary tmb-btn-deflaut-size" id="myDialog">
+        Confirm
+    </div>
+    <div class="tmb-btn tmb-btn-primary tmb-btn-red tmb-btn-deflaut-size" id="myDialog1">
+        Alert
+    </div>
+    <div class="tmb-btn tmb-btn-primary tmb-btn-red tmb-btn-deflaut-size" id="myDialog2">
+        Loading...
+    </div>
+
+</div>
+
+<br/>
+<script type="text/javascript" src="../js/config.js"></script>
+<script data-main="../js/app" src="../vendor/require/require.js"></script>
+</body>
+</html>

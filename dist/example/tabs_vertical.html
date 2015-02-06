@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/tmbui.min.css">
+    <title>Tabs</title>
+</head>
+<body>
+<div class="tmb-header tmb-primary">
+    <a class="tmb-icon icon-angle-left tmb-pull-left tmb-white-color" href="tabs.html"></a>
+    <h2 class="tmb-text-center tmb-white-color">Tab(纵向)</h2>
+</div>
+    <div class="tmb-content tmb-header-fixed">
+
+        <div class="tmb-navs theme-default">
+            <ul class="tmb-navs-list">
+                <li class="current"><a href="#">首页</a></li>
+                <li><a href="#">分类</a></li>
+                <li><a href="#">购物车</a></li>
+                <li><a href="#">设置</a></li>
+            </ul>
+        </div>
+        <div class="tmb-tab-vertical" id="tab6">
+            <div class="tmb-tab-cell">
+                <ul class="tmb-list-view">
+                    <li class="tmb-tab-item tmb-tab-current">
+                        <a transition="flip">
+                            <span  class="tmb-icon icon-cog"></span>
+                            <span  class="tmb-tab-title">靴子</span>
+                        </a>
+                    </li>
+                    <li class="tmb-tab-item">
+                        <a transition="flip">
+                            <span class="tmb-icon icon-facetime-video"></span>
+                            <span class="tmb-tab-title">家电</span>
+                        </a>
+                    </li>
+                    <li class="tmb-tab-item">
+                        <a transition="flip">
+                            <span class="tmb-icon icon-camera"></span>
+                            <span class="tmb-tab-title">数码</span>
+                        </a>
+                    </li>
+                    <li class="tmb-tab-item">
+                        <a transition="flip">
+                            <span  class="tmb-icon icon-facetime-video"></span>
+                            <span class="tmb-tab-title">电脑办公</span>
+                        </a>
+                    </li>
+                    <li class="tmb-tab-item">
+                        <a transition="flip">
+                            <span  class="tmb-icon icon-eye-open"></span>
+                            <span class="tmb-tab-title">个护化妆</span>
+                        </a>
+                    </li>
+                    <li class="tmb-tab-item">
+                        <a transition="flip">
+                            <span  class="tmb-icon icon-book"></span>
+                            <span class="tmb-tab-title">图书</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tmb-tab-content">
+                <div class="tmb-right-box">靴子</div>
+                <div class="tmb-right-box">家电</div>
+                <div class="tmb-right-box">数码</div>
+                <div class="tmb-right-box">电脑办公</div>
+                <div class="tmb-right-box">个护化妆</div>
+                <div class="tmb-right-box">图书</div>
+            </div>
+        </div>
+    </div>
+
+<br/>
+</body>
+<script type="text/javascript" src="../js/config.js"></script>
+<script data-main="../js/app" src="../vendor/require/require.js"></script>
+</html>

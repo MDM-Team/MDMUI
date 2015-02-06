@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/tmbui.min.css">
+    <title>Progressbar</title>
+    <style>
+        .tmb-content{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="tmb-header tmb-primary">
+    <a class="tmb-icon icon-angle-left tmb-pull-left tmb-white-color" href="../index.html"></a>
+    <h1 class="tmb-title tmb-white-color">ProgressBar</h1>
+</div>
+<div class="tmb-content tmb-header-fixed">
+
+    <div class="tmb-graph">
+        <strong class="tmb-progressbar" id="bar" style="width:15%;">15%</strong>
+    </div>
+    <div>
+        <div class="tmb-spinner">
+            <div class="tmb-spinner-container tmb-spinner-container1">
+                <div class="tmb-spinner-circle1"></div>
+                <div class="tmb-spinner-circle2"></div>
+                <div class="tmb-spinner-circle3"></div>
+                <div class="tmb-spinner-circle4"></div>
+            </div>
+            <div class="tmb-spinner-container tmb-spinner-container2">
+                <div class="tmb-spinner-circle1"></div>
+                <div class="tmb-spinner-circle2"></div>
+                <div class="tmb-spinner-circle3"></div>
+                <div class="tmb-spinner-circle4"></div>
+            </div>
+            <div class="tmb-spinner-container tmb-spinner-container3">
+                <div class="tmb-spinner-circle1"></div>
+                <div class="tmb-spinner-circle2"></div>
+                <div class="tmb-spinner-circle3"></div>
+                <div class="tmb-spinner-circle4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="tmb-sk-spinner tmb-sk-spinner-three-bounce">
+        <div class="tmb-sk-bounce1"></div>
+        <div class="tmb-sk-bounce2"></div>
+        <div class="tmb-sk-bounce3"></div>
+    </div>
+    <br><br>
+    <div class="tmb-sk-spinner tmb-sk-spinner-pulse"></div>
+    <br><br>
+    <div class="tmb-sk-spinner tmb-sk-spinner-wave">
+        <div class="tmb-sk-rect1"></div>
+        <div class="tmb-sk-rect2"></div>
+        <div class="tmb-sk-rect3"></div>
+        <div class="tmb-sk-rect4"></div>
+        <div class="tmb-sk-rect5"></div>
+    </div>
+    <br/><br/> <br/><br/>
+</div>
+</body>
+<script>
+    !(function(){
+        var bar=document.getElementById("bar");
+        function go(){
+            bar.style.width = parseInt(bar.style.width) + 1 + "%";
+            bar.innerHTML = bar.style.width;
+            if(bar.style.width == "100%"){
+                window.clearInterval(mybar);
+            }
+        }
+        var mybar = window.setInterval(go,50);
+    })()
+
+
+</script>
+</html>

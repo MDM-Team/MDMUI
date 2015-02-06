@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/tmbui.min.css">
+    <title>Pagination</title>
+    <style>
+        .tmb-box-item{padding:10px;}
+        .tmb-patitle{border-bottom:solid 1px #f1f1f1;padding-bottom:5px;margin-bottom:10px;}
+        .max-240{max-width:240px;}
+    </style>
+</head>
+<body>
+<div class="tmb-header tmb-green-bg tmb-primary">
+    <a class="tmb-icon icon-angle-left tmb-pull-left tmb-white-color" href="../index.html"></a>
+    <h1 class="tmb-title tmb-white-color">分页</h1>
+</div>
+
+<div class="tmb-content tmb-header-fixed">
+
+   <div class="tmb-box-item">
+       <h2 class="tmb-patitle">PC端</h2>
+       <h3>普通按钮</h3>
+       <ul data-tmb-widget="pagination" class="tmb-pagination tmb-pagination-default">
+           <li class="tmb-pagination-first"><a href="#">第一页</a></li>
+           <li class="tmb-pagination-prev"><a href="#">上一页</a></li>
+           <li class=""><a href="#">1</a></li>
+           <li class="tmb-active"><a href="#">2</a></li>
+           <li class=""><a href="#">3</a></li>
+           <li class=""><a href="#">...</a></li>
+           <li class="tmb-pagination-next "><a href="#">下一页</a></li>
+           <li class="tmb-pagination-last "><a href="#">最末页</a></li>
+       </ul>
+       <h3>选择框类型</h3>
+       <div class="max-240">
+           <ul data-am-widget="pagination" class="tmb-pagination tmb-pagination-select tmb-no-layout">
+               <li class="tmb-pagination-prev"><a href="#">上一页</a></li>
+               <li class="tmb-pagination-select">
+                   <select>
+                       <option value="#" class="">1 / 3</option>
+                       <option value="#" class="">2 / 3</option>
+                       <option value="#" class="">3 / 3</option>
+                   </select>
+               </li>
+               <li class="tmb-pagination-next"><a href="#">下一页</a></li>
+           </ul>
+       </div>
+       <br/>
+       <h2 class="tmb-patitle">移动端</h2>
+       <div class="tmb-pagination-more">
+       <ul class="tmb-list list-define">
+           <li class="tmb-list-item">
+               <a class="">
+                   <dl class="tmb-media" data-imgdelay="1">
+                       <dt class="tmb-media-dt tmb-media-fl">
+                           <img src="../images/temp/GXAyg523234Xgasf.png" alt="">
+                       </dt>
+                       <dd class="tmb-media-dd">
+                           <h3 class="tmb-media-h3">比基尼女郎洗车现西安</h3>
+                           <h4 class="tmb-media-sub">因最近朝鲜话题火热，好莱坞决定提前电影上映时间。</h4>
+                           <p class="tmb-media-op">
+                               <span class="tmb-media-op-ico tmb-media-time-num tmb-media-fl">45分钟前</span>
+                           </p>
+                       </dd>
+                   </dl>
+               </a>
+           </li>
+           <li class="tmb-list-item">
+               <a class="">
+                   <dl class="tmb-media" data-imgdelay="1">
+                       <dt class="tmb-media-dt tmb-media-fl">
+                           <img src="../images/temp/GHHASFDRwre32234.png" alt="">
+                       </dt>
+                       <dd class="tmb-media-dd">
+                           <h3 class="tmb-media-h3">昔日软饭男，今日红小生</h3>
+                           <h4 class="tmb-media-sub">郭宜品主政地方大拆大建，与地产商关系密切，受贿500万。</h4>
+                           <p class="tmb-media-op">
+                               <span class="tmb-media-op-ico tmb-media-time-num tmb-media-fl">45分钟前</span>
+                           </p>
+                       </dd>
+                   </dl>
+               </a>
+           </li>
+           <li class="tmb-list-item">
+               <a class="">
+                   <dl class="tmb-media" data-imgdelay="1">
+                       <dt class="tmb-media-dt tmb-media-fl">
+                           <img src="../images/temp/UYFYUasb67456XGA2.png" alt="">
+                       </dt>
+                       <dd class="tmb-media-dd">
+                           <h3 class="tmb-media-h3">环保部门点名批京津冀雾霾应急</h3>
+                           <h4 class="tmb-media-sub">部门地区应急工作形式大于内容，环保部门“单打独斗”。</h4>
+                           <p class="tmb-media-op">
+                               <span class="tmb-media-op-ico tmb-media-time-num tmb-media-fl">45分钟前</span>
+                           </p>
+                       </dd>
+                   </dl>
+               </a>
+           </li>
+       </ul>
+       <div class="pagination-more-ft">
+           <a href="#" class="pagination-more-lnks">查看更多&nbsp;<i class="icon-double-angle-down"></i></a>
+           <span class="pagination-more-loading"><i class="icon-spinner icon-spin"></i>&nbsp;正在载入...</span>
+       </div>
+       </div>
+   </div>
+
+
+</div>
+<script type="text/javascript" src="../js/config.js"></script>
+<script data-main="../js/app" src="vendor/require/require.js"></script>
+</body>
+</html>

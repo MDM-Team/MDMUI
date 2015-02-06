@@ -1,0 +1,345 @@
+.tmb-slide {
+  position:  relative;
+  overflow:  hidden;
+  -webkit-font-smoothing:  antialiased;
+}
+.tmb-slide.tmb-left  {
+  text-align:  left;
+}
+.tmb-slide.tmb-center  {
+  text-align:  center;
+}
+.tmb-slide.tmb-fluid  >  .tmb-slide-inner  >  *  {
+  width:  100%;
+  max-width:100%;
+}
+.tmb-slide.tmb-fluid.tmb-center  >  .tmb-slide-inner  >  *:first-child  {
+  margin-left:  0%;
+}
+.tmb-slide.tmb-fluid-2  >  .tmb-slide-inner  >  *  {
+  width:  50%;
+}
+.tmb-slide.tmb-fluid-2.tmb-center  >  .tmb-slide-inner  >  *:first-child  {
+  margin-left:  25%;
+}
+.tmb-slide.tmb-fluid-3  >  .tmb-slide-inner  >  *  {
+  width:  33.333%;
+}
+.tmb-slide.tmb-fluid-3.tmb-center  >  .tmb-slide-inner  >  *:first-child  {
+  margin-left:  33.333%;
+}
+.tmb-slide.tmb-fluid-4  >  .tmb-slide-inner  >  *  {
+  width:  25%;
+}
+.tmb-slide.tmb-fluid-4.tmb-center  >  .tmb-slide-inner  >  *:first-child  {
+  margin-left:  37.5%;
+}
+.tmb-slide.tmb-fluid-5  >  .tmb-slide-inner  >  *  {
+  width:  20%;
+}
+.tmb-slide.tmb-fluid-5.tmb-center  >  .tmb-slide-inner  >  *:first-child  {
+  margin-left:  40%;
+}
+.tmb-slide.tmb-fluid-6  >  .tmb-slide-inner  >  *  {
+  width:  16.667%;
+}
+.tmb-slide.tmb-fluid-6.tmb-center  >  .tmb-slide-inner  >  *:first-child  {
+  margin-left:  41.667%;
+}
+.tmb-slide  img  {
+  -ms-interpolation-mode:  bicubic;
+}
+
+.tmb-slide .tmb-item {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
+
+.tmb-slide-inner  {
+  position:  relative;
+  white-space:  nowrap;
+  text-align:  left;
+  /*  Removes  inline-block  gaps  due  to  whitespace  */
+  font-size:  0;
+  /*  Configure  animations  */
+  -webkit-transition-property:  -webkit-transform;
+  -moz-transition-property:  -moz-transform;
+  -ms-transition-property:  -ms-transform;
+  -o-transition-property:  -o-transform;
+  transition-property:  transform;
+  /*  iOS  like  slide  timings  */
+  -webkit-transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+  -moz-transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+  -ms-transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+  -o-transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+  transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+  -webkit-transition-duration:  0.5s;
+  -moz-transition-duration:  0.5s;
+  -ms-transition-duration:  0.5s;
+  -o-transition-duration:  0.5s;
+  transition-duration:  0.5s;
+}
+.tmb-slide-inner  >  *  {
+  display:  inline-block;
+  vertical-align:  top;
+  white-space:  normal;
+  /*  We  must  reset  the  font-size  here  */
+  font-size:  16px;
+}
+.tmb-fluid  >  .tmb-slide-inner  >  *  {
+  box-sizing:  border-box;
+  -ms-box-sizing:  border-box;
+  -moz-box-sizing:  border-box;
+  -o-box-sizing:  border-box;
+  -webkit-box-sizing:  border-box;
+}
+.tmb-center:not(.tmb-fluid)  >  .tmb-slide-inner  {
+  display:  inline-block;
+  margin-right:  -20000px  !important;
+  margin-left:  0  !important;
+}
+.tmb-center:not(.tmb-fluid)  >  .tmb-slide-inner  >  *  {
+  position:  relative;
+  left:  -20000px;
+}
+.tmb-center:not(.tmb-fluid)  >  .tmb-slide-inner  >  *:first-child  {
+  float:  left;
+  margin-right:  20000px;
+  left:  0;
+}
+.tmb-center:not(.tmb-fluid)  >  .tmb-slide-inner  >  *:first-child:last-child  {
+  margin-right:  0;
+}
+.tmb-center:not(.tmb-fluid)  >  .tmb-slide-inner  >  *:last-child  {
+  margin-right:  -30000px;
+}
+
+.tmb-slide-controls {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.tmb-slide-controls a {
+  padding: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: -moz-none;
+  user-drag: none;
+}
+/* Carousel controls: Bulleted */
+.tmb-slide-bulleted{
+  background: rgba(0,0,0,.7);
+  bottom: 0;
+  left:0;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  padding-bottom:10px;
+}
+.tmb-slide-bulleted a {
+  line-height: 0;
+  text-decoration: none;
+  text-indent: -999px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 6px;
+  width: 0;
+  height: 0;
+  margin: 0 3px;
+  color: #333;
+  background-color: rgba(255,255,255,0.3);
+  -webkit-transition: background-color 0.1s ease-in;
+  -moz-transition: background-color 0.1s ease-in;
+  -o-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+  -webkit-box-shadow: inset rgba(0,0,0,0.25) 0 1px 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.25) 0 1px 2px;
+  box-shadow: inset rgba(0,0,0,0.25) 0 1px 2px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.tmb-slide-bulleted a:hover, .tmb-slide-bulleted a:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.6);
+}
+.tmb-slide-bulleted a.tmb-active {
+  background-color: rgba(255,255,255,1);
+  -webkit-box-shadow: rgba(0,0,0,0.25) 0 1px 2px;
+  -moz-box-shadow: rgba(0,0,0,0.25) 0 1px 2px;
+  box-shadow: rgba(0,0,0,0.25) 0 1px 2px;
+}
+/* Carousel controls: Pagination */
+.tmb-slide-pagination {
+  padding-top: 10px;
+}
+.tmb-slide-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 1px 0;
+  color: #333;
+  background-color: rgba(255,255,255,0.3);
+  -webkit-transition: background-color 0.1s ease-in;
+  -moz-transition: background-color 0.1s ease-in;
+  -o-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.tmb-slide-pagination a:hover, .tmb-slide-pagination a:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.6);
+}
+.tmb-slide-pagination a.tmb-active {
+  background-color: rgba(255,255,255,1);
+}
+
+/* Carousel controls: HUD */
+.tmb-slide-hud {
+  padding-top: 0;
+}
+.tmb-slide-hud a {
+  z-index: 2;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 0;
+  padding: 0;
+  text-decoration: none;
+  text-indent: -999px;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.1s ease-in;
+  -moz-transition: opacity 0.1s ease-in;
+  -o-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+.tmb-slide:hover .tmb-slide-hud a {
+  opacity: 0.5;
+}
+.tmb-slide .tmb-slide-hud a:hover, .tmb-slide .tmb-slide-hud a:focus {
+  opacity: 1;
+}
+.tmb-slide-hud a:after {
+  color: rgba(255,255,255,0.85);
+  content: "\25c0";
+  font-size: 25px;
+  font-weight: bold;
+  text-indent: 0;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 47px;
+  height: 50px;
+  z-index: 9;
+}
+.tmb-slide-hud .tmb-slide-prev {
+  left: 10px;
+}
+.tmb-slide-hud .tmb-slide-next {
+  right: 10px;
+}
+.tmb-slide-hud .tmb-slide-next:after {
+  left: auto;
+  right: 0;
+  content: "\25b6";
+}
+
+/* extra bits */
+
+/* captions */
+.tmb-caption {
+  margin: 0;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+}
+/* scaled slides */
+.tmb-scaled .tmb-item {
+  opacity: 0.7;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  transform: scale(0.75);
+  -webkit-transition: -webkit-transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s;
+  -moz-transition-timing-function: -moz-transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s;
+  -o-transition-timing-function: -o-transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s;
+  transition-timing-function: transform cubic-bezier(0.33, 0.66, 0.66, 1) 0.25s, opacity ease-out 0.25s;
+}
+.tmb-scaled .tmb-active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+/* Default Themes/Sytles for Slider */
+.tmb-fluid .tmb-item {}
+/* Fluid Width Photo Carousel
+ * .tmb-slide.tmb-fluid.tmb-slide-photos
+ */
+.tmb-slide-photos {}
+.tmb-slide-photos .tmb-item  > img {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  width: 100%;
+  height: auto;
+}
+.tmb-slide-photos .tmb-caption {
+  background: rgba(0,0,0,0.7);
+  bottom: 0;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  color:#fff;
+}
+
+/* Inner Cards for Carousel */
+.tmb-card-dark, .tmb-card-light {
+  padding: 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
+  -moz-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
+  -o-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
+  -ms-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
+  box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
+}
+.tmb-card-dark {
+  background: rgba(0,0,0,0.5);
+  color: #FFF;
+}
+.tmb-card-light {
+  background: rgba(255,255,255,0.9);
+  color: #000;
+}
+.tmb-card-dark .tmb-caption, .tmb-card-light .tmb-caption {
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+.tmb-fade-out {
+  -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,
+          rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
+}
+

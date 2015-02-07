@@ -3,7 +3,6 @@ require([
 ], function(){
     $.check();
     $.select();
-
     $.collapse();
     $("#myDialog").on("click",function(){
         var dia=$.dialog({
@@ -19,16 +18,6 @@ require([
             console.log("dialog hide")
         });
     });
-    //loading十列
-   /* var el=$.loading({
-        content:'加载中...'
-    })
-    setTimeout(function(){
-        el.loading("hide");
-    },2000);
-    el.on("loading:hide",function(){
-        console.log("loading hide");
-    });*/
     $("#myDialog2").on("click",function(){
         var el=$.loading({
             content:'加载中...'
@@ -54,7 +43,6 @@ require([
             console.log("dialog hide")
         });
     });
-    /********Tab案例*/
     var tabOptions={
         speedline:300,
         speedbox:500

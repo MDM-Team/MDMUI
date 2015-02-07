@@ -1,26 +1,19 @@
-/**
- * Created by huangyl on 2014/11/21.
- */
 define(function (require, exports, module) {
     require('ui/basic');
 
-    ;
-    (function ($) {
-        // 默认模板
+    ;(function ($) {
         var _tipsTpl = '<div class="tmb-poptips tmb-poptips-<%=type%>">' +
             '<div class="tmb-poptips-cnt">' +
             '<i></i><%=content%>' +
             '</div>' +
             '</div>';
 
-        // 默认参数
         var defaults = {
             content: '',
             stayTime: 1000,
             type: 'info',
             callback: function () {}
         }
-        // 构造函数
         var Tips = function (el, option, isFromTpl) {
             var self = this;
             this.element = $(el);

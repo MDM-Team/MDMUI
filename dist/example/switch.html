@@ -9,7 +9,6 @@
     <title>Switch</title>
     <style>
         .iosCheck {
-            /* Blue edition */
         }
         .iosCheck input {
             display: none;
@@ -44,7 +43,7 @@
             box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 40px #0093ea;
             -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 40px #0093ea;
         }
-        /* General styling */
+   
 
         dl {
             width: 100%;
@@ -66,28 +65,25 @@
         .tmb-content{
             margin-top: 50px;
         }
-        /*-------------------------*\
-	 *	Demo1
-	\*-------------------------*/
 
         .labelWrap {
             width: 200px;
             overflow: hidden;
         }
-        /*==checkbox容器样式==*/
+ 
         #sliderLabel {
             border: 1px solid #555;
             border-radius: 4px;
             cursor: pointer;
             display: block;
             height: 30px;
-            overflow: hidden;/*==这个值很重要，将超出容器部分隐藏==*/
+            overflow: hidden;
             position: relative;
             width: 100px;
             float: left;
             margin-right: 10px;
         }
-        /*==隐藏input[type="checkbox"]==*/
+
         #onOff {
             border: 0 none !important;
             clip: rect(1px,1px,1px,1px);
@@ -96,9 +92,9 @@
             position: absolute !important;
             width: 1px !important;
         }
-        /*==checkbox处于默认状态位置（未选中）==*/
+
         #slider {
-            left: -50px;/*定位在OFF位置*/
+            left: -50px;
             position: absolute;
             top: 0;
             -moz-transition: left 0.2s ease-out;
@@ -107,7 +103,6 @@
             -ms-transition: left 0.2s ease-out;
             transition: left 0.2s ease-out;
         }
-        /*==ON、OFF和盖板定位位置==*/
         #sliderOn,
         #slideBlock,
         #sliderOff  {
@@ -145,7 +140,6 @@
             width: 48px;
             border: 1px solid #e5e5e5;
         }
-        /*==OFF按钮风格==*/
         #sliderOff {
             background: -webkit-linear-gradient(19% 75% 90deg,#3095C7, #14539C);
             background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#14539C), to(#3095C7));
@@ -153,7 +147,7 @@
             background: -o-linear-gradient(19% 75% 90deg,#3095C7, #14539C);
             background: -ms-linear-gradient(19% 75% 90deg,#3095C7, #14539C);
             background: linear-gradient(19% 75% 90deg,#3095C7, #14539C);
-            left: 96px;/*OFF按钮默认位置处*/
+            left: 96px;
             width: 54px;
         }
         #lableTitle{

@@ -1,6 +1,3 @@
-/**
- * Created by huangyl on 2014/11/18.
- */
 define(function (require, exports, module) {
     require('ui/basic');;
     (function ($, window) {
@@ -10,15 +7,11 @@ define(function (require, exports, module) {
             this.init();
         }
         Select.prototype = {
-            /**
-             * 初始化
-             */
             init: function () {
                 $(".tmb-select").each(function () {
                     $(this).on("click", function () {
                         if ($(this).data("switch") == "off") {
                             $(this).data("switch", "on");
-                            //alert( $(this).find("a").addClass());
                             $(this).find("a").removeClass("icon-chevron-down-right");
                             $(this).find("a").addClass("icon-chevron-up-right");
                             $(this).next().show(100);

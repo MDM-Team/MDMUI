@@ -1,6 +1,3 @@
-/**
- * Created by huangyl on 2014/11/18.
- */
 define(function (require, exports, module) {
     require('ui/basic');;
     (function ($, window) {
@@ -10,11 +7,8 @@ define(function (require, exports, module) {
             this.init();
         }
         Check.prototype = {
-            /**
-             * 初始化
-             */
             init: function () {
-                //初始化checkbox/两种状态切换
+        
                 $(".tmb-checkbox").each(function () {
                     $(this).on('click', function () {
                         var input = $(this).children()[0];

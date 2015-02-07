@@ -1,10 +1,7 @@
-/**
- * Created by huangyl on 2014/11/21.
- */
 define(function (require, exports, module) {
     require('ui/basic');;
     (function ($) {
-        // 默认模板
+       
         var _dialogTpl = '<div class="tmb-dialog">' +
             '<div class="tmb-dialog-cnt">' +
             '<div class="tmb-dialog-bd">' +
@@ -23,7 +20,7 @@ define(function (require, exports, module) {
             '</div>' +
             '</div>' +
             '</div>';
-        // 默认参数
+       
         var defaults = {
             title: '',
             content: '',
@@ -77,7 +74,7 @@ define(function (require, exports, module) {
                 self._isFromTpl && self.element.remove();
             }
         }
-        // 禁止冒泡
+    
         function _stopScroll() {
             return false;
         }

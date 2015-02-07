@@ -1,5 +1,4 @@
 var path = require('path');
-
 var gulp    = require('gulp'),                 
     imagemin = require('gulp-imagemin'),      
     sass = require('gulp-ruby-sass'),       
@@ -21,27 +20,25 @@ gulp.task('html', function() {
         htmlDst = './dist/';
 
     gulp.src(htmlSrc)
-        .pipe(livereload(server))
         .pipe(gulp.dest(htmlDst))
+        .pipe(livereload(server));
 });
-
-
+// gulp-ruby-sass: 1.x
 gulp.task('css', function(){
-    gulp.src(['./src/1.0.0/sass/tmbui.scss'])
-        .pipe(sass({
-            "sourcemap=none":true,
+    return sass(['./src/1.0.0/sass/tmbui.scss'],{
+            sourcemap:false,
             noCache:true,
-            "style":"expanded",
-            "unixNewlines":true
-        }))
+            style:'expanded',
+            unixNewlines:true
+        })
         .pipe(gulp.dest('./dist/css'))
         .pipe(minifycss({noAdvanced: true}))
         .pipe(rename({
             suffix: '.min',
             extname: ".css"
         }))
-        .pipe(livereload(server))
-        .pipe(gulp.dest('./dist/css'));
+        .pipe(gulp.dest('./dist/css'))
+        .pipe(livereload(server));
 });
 
 gulp.task('js', function(){
@@ -56,21 +53,24 @@ gulp.task('clean', function() {
         .pipe(clean());
 });
 gulp.task('connect', function () {
-    var connect = require('connect');
+    var connect = require('connect'),
+        serveIndex = require('serve-index'),
+        serveStatic = require('serve-static');
+
     var app = connect()
-        .use(require('connect-livereload')({ port: 35729 }))
-        .use(connect.static('./src/1.0.0/')).use(connect.static('./dist/'))
-        .use(connect.directory('./src/1.0.0/'));
+        .use(serveStatic('./src/1.0.0/')).use(serveStatic('./dist/'))
+        .use(serveIndex('./src/1.0.0/'));
 
     require('http').createServer(app)
         .listen(9000)
         .on('listening', function () {
             console.log('Started connect web server on http://localhost:9000');
         });
+
 });
 
 gulp.task('serve', ['connect', 'css'], function () {
-    require('opn')('http://localhost:9000');
+    require('open')('http://localhost:9000');
 });
 
 gulp.task('default', ['clean'], function(){
@@ -78,7 +78,7 @@ gulp.task('default', ['clean'], function(){
 });
 gulp.task('watch', ['connect', 'serve'], function () {
     var server = $.livereload();
-
+    livereload.listen();
     gulp.watch([
         './src/1.0.0/**/*.html',
         './src/1.0.0/sass/**/*.scss',

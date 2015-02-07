@@ -1,10 +1,6 @@
-/**
- * Created by huangyl on 2014/11/21.
- */
 define(function (require, exports, module) {
     require('ui/basic');;
     (function ($) {
-        // 默认参数
         var defaults = {
             speedline: 300,
             speedbox: 500

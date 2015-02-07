@@ -1,11 +1,7 @@
-/**
- * Created by huangyl on 2014/11/25.
- */
 define(function (require, exports, module) {
     require('ui/basic');
     require('ui/ui.canvasloader');;
     (function ($) {
-        // 默认模板
         var _loadingTpl = '<div class="tmb-dialog tmb-dialog-notice show">' +
             '<div class="tmb-dialog-cnt">' +
             '<i class="tmb-loading-bright" id="cl_roundRect">' +
@@ -13,13 +9,11 @@ define(function (require, exports, module) {
             '<p><%=content%></p>' +
             '</div>' +
             '</div>';
-        // 默认参数
         var defaults = {
             content: '加载中...',
             type: "spiral",
             color: "#fff"
         }
-        // 构造函数
         var Loading = function (el, option, isFromTpl) {
             var self = this;
             this.element = $(el);

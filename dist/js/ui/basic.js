@@ -1,6 +1,3 @@
-/**
- * Created by huangyl on 2014/11/21.
- */
 define(function (require, exports, module) {
     require('vendor/zepto/zepto');
     require('ui/zepto.extend.data');

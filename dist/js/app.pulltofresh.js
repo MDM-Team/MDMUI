@@ -21,7 +21,6 @@ require([
                 el.insertBefore(li, el.childNodes[0]);
             }
             var tipscontent="成功更新了3条数据";
-            //暴露Iscroll对象
             var el=$.tips({
                 content:tipscontent,
                 stayTime:2000,
@@ -41,7 +40,6 @@ require([
                 li.innerText = 'Generated rowsadsad ';
                 el.appendChild(li, el.childNodes[0]);
             }
-            //暴露Iscroll对象
             iscroll.refresh();		// Remember to refresh when contents are loaded (ie: on ajax completion)
         }, 1000);	// <-- Simulate network congestion, remove setTimeout from production!
     });
